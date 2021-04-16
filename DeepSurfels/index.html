@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="[CVPR 2021] DeepSurfels: Learning Online Appearance Fusion">
+      <meta name="author" content="Marko Mihajlovic">
+      <title>DeepSurfels: Learning Online Appearance Fusion</title>
+      <meta property="og:title" content="DeepSurfels: Learning Online Appearance Fusion" />
+      <meta property="og:description" content="[CVPR 2021] DeepSurfels: Learning Online Appearance Fusion">
+      <meta property="og:image" content="https://onlinereconstruction.github.io/DeepSurfels/images/surfel_alignment.svg" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="DeepSurfels: Learning Online Appearance Fusion" />
+      <meta name="twitter:description" content="[CVPR 2021] DeepSurfels: Learning Online Appearance Fusion" />
+      <meta name="twitter:image" content="https://onlinereconstruction.github.io/DeepSurfels/images/surfel_alignment.svg" />
+      <meta name="twitter:image:alt" content="DeepSurfels CVPR 2021" />
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/scrolling-nav.css" rel="stylesheet">
+      <!-- nice figures  -->
+      <link rel="stylesheet" href="css/font-awesome.css">
+   </head>
+   <body id="page-top">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">DeepSurfels</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#video">Video</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#code">Code</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#pubs">Publication</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="bg-light text-black">
+         <div class="container text-center">
+            <h1>DeepSurfels </h1>
+            <h2>Learning Online Appearance Fusion</h2>
+            <br>
+            <p class="lead"><i>DeepSurfels is a novel 3D representation for geometry and appearance information that combines planar surface primitives with voxel grid representation for improved scalability and rendering.</i>
+            </p>
+         </div>
+      </header>
+      <section id="about" class="about-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 mx-auto">
+                  <p class="lead">
+                    We approach the problem of online appearance reconstruction from RGB-D images with our novel DeepSurfel representation that combines the advantages of
+                    <b>1)</b> implicit grids, which easily handle topological changes and where low resolution is often sufficient to encode the scene topology,
+                    <b>2)</b> scalable high-frequency appearance along the surface via texture maps or learned feature maps, and
+                    <b>3)</b> a learned scene representation to build a framework for learning-based appearance fusion that allows for online processing and scalability to large scenes.
+
+                     The whole pipeline is end-to-end differentiable and compatible learned and deterministic texturing.
+                     <!-- where linear blend skinning (LBS) functions are usually applied to drive the deformation of a human body from a canonical space to a posed space.  -->
+                  </p>
+                  <br> <br>
+                   <div class="img-wide text-center">
+                     <p><img class="img-fluid" alt="teaser" src="images/teaser_sketch.svg"></p>
+                  </div>
+                  <br><br>
+                  <h3>Overview</h3>
+                  <p class="lead">
+                     We present DeepSurfels, a novel hybrid scene represen-
+tation for geometry and appearance information. DeepSur-
+fels combines explicit and neural building blocks to jointly
+encode geometry and appearance information. In contrast
+to established representations, DeepSurfels better repre-
+sents high-frequency textures, is well-suited for online up-
+dates of appearance information, and can be easily com-
+bined with machine learning methods. We further present
+an end-to-end trainable online appearance fusion pipeline
+that fuses information provided by RGB images into the
+proposed scene representation and is trained using self-
+supervision imposed by the reprojection error with respect
+to the input images. Our method compares favorably to
+classical texture mapping approaches as well as recently
+proposed learning-based techniques. Moreover, we demon-
+strate lower runtime, improved generalization capabilities,
+and better scalability to larger scenes compared to existing
+methods.
+                  </p>
+                  <br> <br>
+                  <div class="text-center">
+                    <p><img class="img-fluid" alt="teaser" src="images/surfel_alignment.svg"></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="video" class="">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 mx-auto">
+                  <h2 class="section-title-tc">Video</h2> -->
+                  <p class="lead"><a class="publink" >Coming soon ...</a></p>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src=""></iframe>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="code" class="">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 mx-auto">
+                  <h2 class="section-title-tc">
+                    <a class="publink" href="https://github.com/onlinereconstruction/deep_surfels" target="_blank" style="text-decoration: none">Code <i class="fa fa-github"></i></a>
+                  </h2>
+                  <!-- <p class="lead"><a class="publink" >Coming soon ...</a></p> -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="pubs" class="">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 mx-auto">
+                  <h2 class="section-title-tc">Publications</h2>
+                  <br>
+                  Marko Mihajlovic, Silvan Weder, Marc Pollefeys,  Martin R. Oswald<br>
+                  <a class="publink" target="_blank" href="https://arxiv.org/abs/2012.14240"><b>
+                    DeepSurfels: Learning Online Appearance Fusion</b><br></a>
+                    Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021
+                  <br><br>
+<pre style="display: block; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px">@InProceedings{DeepSurfels:CVPR:21,
+  title = {{DeepSurfels}: Learning Online Appearance Fusion},
+  author = {Mihajlovic, Marko and Weder, Silvan and Pollefeys, Marc and Oswald, Martin R},
+  booktitle = {Proceedings IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
+  month = jun,
+  year = {2021},
+}</pre>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="team" class="team-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 mx-auto">
+                  <h2 class="section-title-tc">Team</h2>
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                           <div class="mainflip">
+                                 <div class="card">
+                                    <div class="card-body text-center">
+                                       <p><img class=" img-fluid" src="images/avatars/cropped/MarkoMihajlovic.jpg" alt="card image" width="400" height="400"></p>
+                                       <h4 class="card-title">Marko<br>Mihajlovic</h4>
+                                       <ul class="list-inline">
+                                         <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/marko_mih">
+                                            <i class="fa fa-twitter"></i>
+                                            </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/marko-mihajlovic/">
+                                            <i class="fa fa-linkedin"></i>
+                                            </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="http://markomih.github.io/">
+                                            <i class="fa fa-user"></i>
+                                            </a>
+                                         </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                           </div>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="mainflip">
+                              <div class="card">
+                                 <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="images/avatars/cropped/SilvanWeder.jpg" alt="card image" width="400" height="400"></p>
+                                    <h4 class="card-title">Silvan<br>Weder</h4>
+                                    <ul class="list-inline">
+                                      <li class="list-inline-item">
+                                         <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/weder_silvan">
+                                         <i class="fa fa-twitter"></i>
+                                         </a>
+                                      </li>
+                                       <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="https://ch.linkedin.com/in/silvanweder">
+                                          <i class="fa fa-linkedin"></i>
+                                          </a>
+                                       </li>
+                                       <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.silvanweder.com/">
+                                          <i class="fa fa-user"></i>
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="mainflip">
+                              <div class="card">
+                                 <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="images/avatars/cropped/MarcPollefeys.jpg" alt="card image" width="400" height="400"></p>
+                                    <h4 class="card-title">Marc<br>Pollefeys</h4>
+                                    <ul class="list-inline">
+                                      <li class="list-inline-item">
+                                         <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/mapo1">
+                                         <i class="fa fa-twitter"></i>
+                                         </a>
+                                      </li>
+                                       <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="https://ch.linkedin.com/in/marc-pollefeys-30a7075">
+                                          <i class="fa fa-linkedin"></i>
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+
+                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="mainflip">
+                              <div class="card">
+                                 <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="images/avatars/cropped/MartinOswald.jpg" alt="card image" width="400" height="400"></p>
+                                    <h4 class="card-title">Martin R.<br>Oswald</h4>
+                                    <ul class="list-inline">
+                                      <li class="list-inline-item">
+                                         <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/Martin_R_Oswald">
+                                         <i class="fa fa-twitter"></i>
+                                         </a>
+                                      </li>
+                                       <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="https://ch.linkedin.com/in/martin-r-oswald-167461122">
+                                          <i class="fa fa-linkedin"></i>
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+         <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; DeepSurfels 2021</p>
+         </div>
+         <!-- /.container -->
+      </footer>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Custom JavaScript for this theme -->
+      <script src="js/scrolling-nav.js"></script>
+   </body>
+</html>
