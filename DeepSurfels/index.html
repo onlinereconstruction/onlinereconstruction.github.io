@@ -56,8 +56,7 @@
             <h1>DeepSurfels </h1>
             <h2>Learning Online Appearance Fusion</h2>
             <br>
-            <p class="lead"><i>DeepSurfels is a novel 3D representation for geometry and appearance information that combines planar surface primitives with voxel grid representation for improved scalability and rendering.</i>
-            </p>
+            <p class="lead"><i>DeepSurfels is a novel 3D representation for geometry and appearance information that combines planar surface primitives with voxel grid representation for improved scalability and rendering quality.</i></p>
          </div>
       </header>
       <section id="about" class="about-section">
@@ -66,38 +65,22 @@
                <div class="col-lg-10 mx-auto">
                   <p class="lead">
                     We approach the problem of online appearance reconstruction from RGB-D images with our novel DeepSurfel representation that combines the advantages of
-                    <b>1)</b> implicit grids, which easily handle topological changes and where low resolution is often sufficient to encode the scene topology,
-                    <b>2)</b> scalable high-frequency appearance along the surface via texture maps or learned feature maps, and
-                    <b>3)</b> a learned scene representation to build a framework for learning-based appearance fusion that allows for online processing and scalability to large scenes.
-
-                     The whole pipeline is end-to-end differentiable and compatible learned and deterministic texturing.
-                     <!-- where linear blend skinning (LBS) functions are usually applied to drive the deformation of a human body from a canonical space to a posed space.  -->
+                    <b>1)</b> implicit 3D grids for convenient handeling of topological changes,
+                    <b>2)</b> 2D patches for improved scalability to large scenes, and
+                    <b>3)</b> a powerful learned appearance representation that encodes high-frequncy texture information on objects' surface.
                   </p>
                   <br> <br>
                    <div class="img-wide text-center">
                      <p><img class="img-fluid" alt="teaser" src="images/teaser_sketch.svg"></p>
                   </div>
                   <br><br>
-                  <h3>Overview</h3>
+                  <!-- <h3>Overview</h3> -->
                   <p class="lead">
-                     We present DeepSurfels, a novel hybrid scene represen-
-tation for geometry and appearance information. DeepSur-
-fels combines explicit and neural building blocks to jointly
-encode geometry and appearance information. In contrast
-to established representations, DeepSurfels better repre-
-sents high-frequency textures, is well-suited for online up-
-dates of appearance information, and can be easily com-
-bined with machine learning methods. We further present
-an end-to-end trainable online appearance fusion pipeline
-that fuses information provided by RGB images into the
-proposed scene representation and is trained using self-
-supervision imposed by the reprojection error with respect
-to the input images. Our method compares favorably to
-classical texture mapping approaches as well as recently
-proposed learning-based techniques. Moreover, we demon-
-strate lower runtime, improved generalization capabilities,
-and better scalability to larger scenes compared to existing
-methods.
+                     We present DeepSurfels, a novel hybrid scene representation for geometry and appearance information.
+                     DeepSurfels combines explicit and neural building blocks to jointly encode geometry and appearance information.
+                     In contrast to established representations, DeepSurfels better represents high-frequency textures, is well-suited for online updates of appearance information, and can be easily combined with machine learning methods.
+                     We further present an end-to-end trainable online appearance fusion pipeline that fuses information provided by RGB images into the proposed scene representation and is trained using self-supervision imposed by the reprojection error with respect to the input images.
+                     Our method compares favorably to classical texture mapping approaches as well as recently proposed learning-based techniques. Moreover, we demonstrate lower runtime, improved generalization capabilities, and better scalability to larger scenes compared to existing methods.
                   </p>
                   <br> <br>
                   <div class="text-center">
@@ -111,7 +94,7 @@ methods.
          <div class="container">
             <div class="row">
                <div class="col-lg-10 mx-auto">
-                  <h2 class="section-title-tc">Video</h2> -->
+                  <h2 class="section-title-tc">Video</h2>
                   <p class="lead"><a class="publink" >Coming soon ...</a></p>
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src=""></iframe>
@@ -128,7 +111,6 @@ methods.
                   <h2 class="section-title-tc">
                     <a class="publink" href="https://github.com/onlinereconstruction/deep_surfels" target="_blank" style="text-decoration: none">Code <i class="fa fa-github"></i></a>
                   </h2>
-                  <!-- <p class="lead"><a class="publink" >Coming soon ...</a></p> -->
                </div>
             </div>
          </div>
